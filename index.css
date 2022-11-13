@@ -1,0 +1,496 @@
+* {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+              "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+header {
+    background-color: black;
+}
+
+#menu {
+    display: none;
+}
+
+
+.bar {
+    height: 3px;
+    margin: 5px;
+    width: 35px;
+    background-color: white;
+    display: block;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+.wrap {
+    padding: 30px 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav ul {
+    text-decoration: none;
+    display: flex;
+    gap: 50px;
+    color: #ccc;
+    list-style: none;
+align-items: center;
+}
+
+.nav ul li {
+    margin: 10px 10px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #ccc;
+}
+
+
+.nav li a:hover {
+    color: green;
+}
+
+
+.nav ul li:hover .nav-menu ul {
+    display: block;
+
+}
+
+.nav ul li:hover .nav-menu ul li {
+    text-align: left;
+    width: 120px;
+}
+
+
+.nav ul li:hover .nav-menu ul li a {
+    color: aliceblue;
+    font-size: small;
+}
+
+
+.logo_img {
+    width: 120px;
+    height: 80px;
+    padding-left: 0px;
+}
+
+.nav-link:hover {
+    overflow: visible;
+}
+
+.nav-link {
+    font-size: 15px;
+    font-weight: 600;
+    list-style: none;
+    color: #BDBDBD;
+    height: 10px;
+    overflow: hidden;
+    overflow: hidden;
+}
+
+.nav-link:hover {
+    overflow: visible;
+}
+
+
+.inner-list {
+    padding-top: 5px;
+    /* width: 7vw; */
+    font-size: small;
+}
+
+.fa-solid {
+    color: #BDBDBD;
+}
+
+.div1 {
+    height: 750px;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 20px;
+}
+
+.top_div {
+    width: 600px;
+    padding-top: 180px;
+}
+
+.heading {
+    color: white;
+    font-size: 50px;
+    padding-bottom: 15px;
+
+}
+
+#dropdown {
+    /* display: block; */
+display: none;
+}
+
+.pera {
+    color: #cccccc;
+    font-size: 21px;
+    line-height: 35px;
+    padding-bottom: 20px;
+}
+
+.applaybtn {
+    color: #ffffff;
+    background-color: #08b74f;
+    font-size: 17.6px;
+    padding: 16px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.picture {
+    margin-top: 100px;
+    padding-left: 100px;
+    width: 350px;
+    height: 320px;
+}
+
+
+
+
+.Eligibility-pera {
+    padding-top: 10px;
+    font-size: 16px;
+}
+
+
+.grant_btn {
+    color: #ffffff;
+    background-color: #08b74f;
+    font-size: larger;
+    font-weight: 500;
+    padding: 14px 35px;
+    border: 1px solid #08b74f;
+    border-radius: 5px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.for-color {
+    text-decoration: none;
+}
+
+.for-color:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+.Eligibility {
+    padding-top: 60px;
+    padding-bottom: 130px;
+}
+
+.Recent_Grants {
+    font-size: 40px;
+    margin-bottom: 80px;
+}
+
+.div3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.table {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+
+}
+
+.time_table {
+    width: 210px;
+    text-align: right;
+}
+
+.info {
+    color: #757575;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.place {
+    font-size: 17px;
+    color: #616161;
+    font-weight: 400;
+}
+
+.website_link {
+    color: #08b74f;
+    cursor: pointer;
+}
+
+.box2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.container {
+    width: 900px;
+    padding-top: 100px;
+    margin: auto;
+    line-height: 30px;
+    padding-bottom: 80px;
+}
+
+
+hr {
+    margin: 50px 0px;
+}
+
+.funding_container {
+    height: 300px;
+    margin: 120px 100px 150px 50px;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.fund-apply {
+    font-size: 43px;
+    font-weight: 700;
+    padding-bottom: 10px;
+    color: #fff;
+    padding-top: 50px;
+}
+
+.looking-for-fund {
+    color: #ccc;
+    font-size: 23px;
+    font-weight: 400;
+}
+
+.apply-now {
+    font-size: 23px;
+    color: #616161;
+    font-weight: 700;
+    padding: 6px 0px;
+    margin: 10px 290px;
+    border: 1px solid;
+    border-radius: 20px;
+    background-color: #fff;
+    text-align: center;
+
+}
+
+.footer-container {
+    display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+
+.logo-img {
+    width: 50px;
+    height: 30px;
+    padding-bottom: 30px;
+}
+
+.footer {
+    border: 1px solid black;
+    padding: 80px 90px;
+    background-color: #000;
+}
+
+.footer-links {
+    /* padding: 7px 0px; */
+    color: #BDBDBD;
+    font-size: medium;
+    font-weight: 600;
+}
+
+.footer-icon {
+    font-size: 22px;
+    color: #BDBDBD;
+    cursor: pointer;
+}
+
+.footer-links:hover {
+    color: #08b74f;
+    cursor: pointer;
+}
+
+a {
+    color: #08b74f;
+}
+
+.multi-info {
+    padding: 5px 0px;
+}
+
+h4 {
+    font-size: medium;
+    font-weight: 700;
+    color: #D4D7D7;
+    padding-bottom: 15px;
+}
+
+.information {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.address {
+    font-size: 15px;
+    font-weight: 500;
+    color: #BDBDBD;
+}
+
+.built {
+    color: #616161;
+}
+
+.built:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.line {
+    margin-top: 50px;
+    margin-bottom: 15px;
+    padding: 0px;
+}
+
+.email:hover {
+    cursor: pointer;
+}
+
+@media screen and (min-width:360px) and (max-width:768px) {
+    .picture {
+              display: none;
+    }
+
+    .box2 {
+              display: block;
+              margin: auto;
+    }
+
+    .container {
+              width: 80%;
+              padding-top: 100px;
+              margin: auto;
+              line-height: 30px;
+              padding-bottom: 80px;
+    }
+
+    .div3 {
+              display: block;
+    }
+
+    .fund-apply {
+              font-size: 19px;
+              padding: 10px;
+              color: #fff;
+    }
+
+    .looking-for-fund {
+              color: #ccc;
+              font-size: 15px;
+              font-weight: 400;
+              padding-bottom: 20px;
+    }
+
+    .apply-now {
+              /* display: inline; */
+              padding: 6px 20px;
+              margin: 25px 15px;
+    }
+
+    .funding_container {
+              display: block;
+              padding: 20px;
+              margin: 100px 50px;
+              height: 200px;
+    }
+
+    /* .footer-container {
+              display: grid;
+              grid-template-columns: auto auto;
+              gap: 30px;
+    } */
+
+    /* .footer {
+              padding: 20px 10px;
+    } */
+
+    .information {
+              display: block;
+    }
+
+}
+
+@media screen and (min-width: 360px) and (max-width: 992px) {
+    #menu {
+              cursor: pointer;
+              left: 85%;
+              position: absolute;
+              top: 42px;
+              display: block;
+    }
+
+    .nav ul {
+              font-size: 20px;
+              text-decoration: none;
+              display: block;
+              list-style: none;
+    }
+
+    .nav ul li a {
+              text-decoration: none;
+              color: white;
+    }
+
+    .nav {
+              display: none;
+    }
+
+    .wrap {
+              padding: 30px 30px;
+    }
+
+    .nav-menu {
+              display: none;
+              background-color: black;
+    }
+
+    .nav ul li:hover .nav-menu {
+              display: block;
+              position: absolute;
+              border: 1px solid white;
+              width: 130px;
+    }
+
+    .nav ul li:hover .nav-menu {
+              display: block;
+              position: absolute;
+              margin-left: 0px;
+    }
+
+    .nav ul li:hover .nav-menu ul li {
+              text-align: left;
+              color: white;
+    }
+
+    .container {
+              padding-top: 100px;
+              margin: auto;
+              line-height: 30px;
+              padding-bottom: 80px;
+    }
+
+
+}
