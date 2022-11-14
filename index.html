@@ -468,8 +468,17 @@
         <div class="built">Built on Frappe</div>
     </div>
 </footer>
-<script src="foss.js"></script>
+<script>
+</script>
+document.getElementById("menu").addEventListener("click", openMenu);
+function openMenu(){
+    document.getElementById("dropdown").classList.toggle("active");
+}
 
+document.getElementById("secondMenu").addEventListener("clicked", openSecondMenu);
+function openSecondMenu(){
+    document.getElementById("secondDropdown").classList.toggle("activeAnother");
+}
 
 </body>
 
