@@ -4,7 +4,7 @@
     padding: 0;
     /* box-sizing: border-box; */
     font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
-              "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+        "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
 .header {
@@ -120,7 +120,6 @@
     }
 }
 
-
 .fa-solid {
     color: #BDBDBD;
 }
@@ -145,11 +144,6 @@
 
 }
 
-#dropdown {
-    /* display: block; */
-display: none;
-}
-
 .pera {
     color: #cccccc;
     font-size: 21px;
@@ -169,8 +163,8 @@ display: none;
 .picture {
     margin-top: 100px;
     padding-left: 100px;
-    width: 350px;
-    height: 320px;
+    width: 400px;
+    height: 380px;
 }
 
 
@@ -256,21 +250,35 @@ display: none;
 }
 
 .container {
-    width: 900px;
+    width: 70%;
     padding-top: 100px;
     margin: auto;
     line-height: 30px;
     padding-bottom: 80px;
 }
+h1{
+    padding-bottom: 50px;
+}
+.pera1{
+    font-size: large;
+    font-weight: 500;
+    color: #616161;
+    padding-top: 10px;
+}
 
+.TinkerHub{
+    width: 60%;
+}
 
 hr {
     margin: 50px 0px;
 }
 
 .funding_container {
+    width: 70%;
     height: 300px;
-    margin: 120px 100px 150px 50px;
+    margin: auto;
+    /* margin: 120px 100px 150px 50px; */
     background-color: rgb(0, 0, 0);
     text-align: center;
 }
@@ -294,7 +302,8 @@ hr {
     color: #616161;
     font-weight: 700;
     padding: 6px 0px;
-    margin: 10px 290px;
+    margin: 10px auto;
+    width: 30%;
     border: 1px solid;
     border-radius: 20px;
     background-color: #fff;
@@ -304,8 +313,7 @@ hr {
 
 .footer-container {
     display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
+    justify-content: space-between;
 }
 
 
@@ -317,12 +325,18 @@ justify-content: space-between;
 
 .footer {
     border: 1px solid black;
-    padding: 80px 90px;
+    /* padding: 80px 90px; */
     background-color: #000;
+    margin-top: 100px;
+    /* width: 100%; */
+}
+.inner-footer{
+    width:90%;
+    padding: 30px 30px; 
 }
 
 .footer-links {
-    /* padding: 7px 0px; */
+    padding: 7px 0px;
     color: #BDBDBD;
     font-size: medium;
     font-weight: 600;
@@ -385,128 +399,65 @@ h4 {
     cursor: pointer;
 }
 
-@media screen and (min-width:360px) and (max-width:768px) {
+@media screen and (max-width:768px) {
     .picture {
-              display: none;
+        display: none;
     }
 
     .box2 {
-              display: block;
-              margin: auto;
-    }
-
-    .container {
-              width: 80%;
-              padding-top: 100px;
-              margin: auto;
-              line-height: 30px;
-              padding-bottom: 80px;
+        display: block;
+        margin: auto;
     }
 
     .div3 {
-              display: block;
+        display: block;
+    }
+    .TinkerHub {
+        width: 100%;
+    }
+    .footer-container {
+        display: block;
+        text-align: center;
+    }
+    .footer {
+        display: block;
+        text-align: center;
+        padding: 20px 10px;
+    }
+    .information {
+        display: block;
+    }
+    .apply-now {
+        display: inline;
+        padding: 6px 20px;
+        margin: 25px 15px;
     }
 
-    .fund-apply {
-              font-size: 19px;
-              padding: 10px;
-              color: #fff;
+     .fund-apply {
+        font-size: 19px;
+        padding: 30px 10px 10px 10px;
+        color: #fff;
     }
 
     .looking-for-fund {
-              color: #ccc;
-              font-size: 15px;
-              font-weight: 400;
-              padding-bottom: 20px;
+        color: #ccc;
+        font-size: 15px;
+        font-weight: 400;
+        padding-bottom: 20px;
     }
-
-    .apply-now {
-              /* display: inline; */
-              padding: 6px 20px;
-              margin: 25px 15px;
+    .funding_container{
+        height: 200px;
     }
-
-    .funding_container {
-              display: block;
-              padding: 20px;
-              margin: 100px 50px;
-              height: 200px;
-    }
-
-    /* .footer-container {
-              display: grid;
-              grid-template-columns: auto auto;
-              gap: 30px;
-    } */
-
-    /* .footer {
-              padding: 20px 10px;
-    } */
-
-    .information {
-              display: block;
-    }
-
 }
 
-@media screen and (min-width: 360px) and (max-width: 992px) {
+@media screen and (min-width: 992px) {
+    .picture {
+        width: 300px;
+        height: 350px;
+    }
+
     #menu {
-              cursor: pointer;
-              left: 85%;
-              position: absolute;
-              top: 42px;
-              display: block;
+        cursor: pointer;
+        display: block;
     }
-
-    .nav ul {
-              font-size: 20px;
-              text-decoration: none;
-              display: block;
-              list-style: none;
-    }
-
-    .nav ul li a {
-              text-decoration: none;
-              color: white;
-    }
-
-    .nav {
-              display: none;
-    }
-
-    .wrap {
-              padding: 30px 30px;
-    }
-
-    .nav-menu {
-              display: none;
-              background-color: black;
-    }
-
-    .nav ul li:hover .nav-menu {
-              display: block;
-              position: absolute;
-              border: 1px solid white;
-              width: 130px;
-    }
-
-    .nav ul li:hover .nav-menu {
-              display: block;
-              position: absolute;
-              margin-left: 0px;
-    }
-
-    .nav ul li:hover .nav-menu ul li {
-              text-align: left;
-              color: white;
-    }
-
-    .container {
-              padding-top: 100px;
-              margin: auto;
-              line-height: 30px;
-              padding-bottom: 80px;
-    }
-
-
 }
